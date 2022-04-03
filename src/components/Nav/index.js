@@ -1,13 +1,16 @@
+import { Container } from '@mui/material';
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 
 function Nav(props) {
   const {
     categories = [],
     setCurrentCategory,
-    contactSelected,
     currentCategory,
-    setContactSelected,
   } = props;
 
   useEffect(() => {
@@ -16,40 +19,26 @@ function Nav(props) {
 
   return (
     <header className="flex-row px-1">
-      <h2>
-        <a data-testid="link" href="/">
-          <span role="img" aria-label="camera"> 📸</span> Tiffany Sobczak
-        </a>
-      </h2>
+      <Container maxWidth="md">
+      <Typography color='primary' variant="h4" sx={{paddingTop: 2}} component="div">Tiffany Sobczak</Typography>
+      
       <nav>
-        <ul className="flex-row">
-          <li className="mx-2">
-            <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
-              About me
-            </a>
-          </li>
-          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <span onClick={() => setContactSelected(true)}>Contact</span>
-          </li>
-          {categories.map((category) => (
-            <li
-              className={`mx-1 ${
-                currentCategory.name === category.name && !contactSelected && 'navActive'
-                }`}
-              key={category.name}
-            >
-              <span
-                onClick={() => {
-                  setCurrentCategory(category);
-                  setContactSelected(false);
-                }}
-              >
-                {capitalizeFirstLetter(category.name)}
-              </span>
-            </li>
-          ))}
-        </ul>
+      <Box sx={{ width: '100%' }}>
+      <Tabs
+        value={currentCategory}
+        onChange={(event, newValue)=> {
+          setCurrentCategory (newValue)
+        }}
+        textColor="primary"
+        indicatorColor="primary"
+      > 
+      {categories.map((category)=> (
+        <Tab href={'#'+category.name} value={category} label={category.name} />
+      ))}
+      </Tabs>
+      </Box>
       </nav>
+      </Container>
     </header>
   );
 }
