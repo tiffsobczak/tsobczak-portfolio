@@ -42,7 +42,7 @@ function App() {
 
   const [currentCategory, setCurrentCategory] = useState(categories.find( (cat) => {
       return '#'+cat.name === window.location.hash
-  }));
+  }) || categories[0]);
 
   return (
     <ThemeProvider theme ={theme}>
