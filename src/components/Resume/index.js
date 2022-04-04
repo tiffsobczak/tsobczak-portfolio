@@ -1,30 +1,55 @@
 import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
+import Card from '@mui/material/Card'
+import CardContent from '@mui/material/CardContent';
 
-export default function ActionAreaCard() {
-  return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
-          alt="green iguana"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-  );
+
+export default function Resume() {
+    return (
+        <div>
+            <Button href={
+                    process.env.PUBLIC_URL + "/assets/resume1021.pdf"
+                }
+                download
+                variant="contained">Download Resume</Button>
+               <Card sx={{maxWidth:'300px', marginTop: 4 }}>
+                   <CardContent>
+                        <Typography variant="h6" component="div">Experience with: </Typography>
+            <List dense>
+
+                <ListItem>
+                    <ListItemText primary="HTML"secondary={''}/>
+                </ListItem>
+                <ListItem>
+                    <ListItemText primary="CSS"secondary={''}/>
+                </ListItem>
+                <ListItem>
+                    <ListItemText primary="JavaScript"secondary={''}/>
+                </ListItem>
+                <ListItem>
+                    <ListItemText primary="React"secondary={''}/>
+                </ListItem>
+                <ListItem>
+                    <ListItemText primary="Node.js"secondary={''}/>
+                </ListItem>
+                <ListItem>
+                    <ListItemText primary="Express.js"secondary={''}/>
+                </ListItem>
+                <ListItem>
+                    <ListItemText primary="MongoDB"secondary={''}/>
+                </ListItem>
+                <ListItem>
+                    <ListItemText primary="SQL"secondary={''}/>
+                </ListItem>
+                
+            </List>
+            </CardContent>
+            </Card>
+        </div>
+
+    );
 }

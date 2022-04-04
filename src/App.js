@@ -6,6 +6,8 @@ import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import {Footer} from './components/Footer'
+
 
 const theme = createTheme({
   palette: {
@@ -13,7 +15,7 @@ const theme = createTheme({
       main: '#3777FF',
     },
     secondary: {
-      main: '#00A6A6',
+      main: '#f4f4f9',
 
     },
   },
@@ -68,6 +70,7 @@ function App() {
         }
         </Container>
       </main>
+      <Footer/>
     </div>
     </ThemeProvider>
   );

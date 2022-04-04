@@ -18,19 +18,20 @@ function Nav(props) {
   }, [currentCategory]);
 
   return (
-    <header className="flex-row px-1">
+    <Box sx={{backgroundColor: '#380036'}} >
       <Container maxWidth="md">
-      <Typography color='primary' variant="h4" sx={{paddingTop: 2}} component="div">Tiffany Sobczak</Typography>
+      <Typography color='secondary' variant="h4" sx={{paddingTop: 2}} component="div">Tiffany Sobczak</Typography>
       
       <nav>
-      <Box sx={{ width: '100%' }}>
+      <Box >
       <Tabs
+      sx={{ color: 'white' }}
         value={currentCategory}
         onChange={(event, newValue)=> {
           setCurrentCategory (newValue)
         }}
-        textColor="primary"
-        indicatorColor="primary"
+        textColor="secondary"
+        indicatorColor="secondary"
       > 
       {categories.map((category)=> (
         <Tab href={'#'+category.name} value={category} label={category.name} />
@@ -39,7 +40,7 @@ function Nav(props) {
       </Box>
       </nav>
       </Container>
-    </header>
+    </Box>
   );
 }
 

@@ -9,6 +9,7 @@ import Masonry from '@mui/lab/Masonry';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { IconButton } from '@mui/material';
 import PublicIcon from '@mui/icons-material/Public';
+import {Project} from '../Project'
 
 
 function Portfolio() {
@@ -16,132 +17,71 @@ function Portfolio() {
     return (
         <Masonry columns={3}
             spacing={2}>
-            <Card sx={
-                {maxWidth: 345}
-            }>
-                <CardMedia component="img" height="140" image={process.env.PUBLIC_URL+"/assets/images/all-tied-app.png"} alt="all tied app screenshot"/>
-                <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                        All Tied App
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                        All Tied App is a friendship finder application for people with busy schedules!
-                    </Typography>
-                </CardContent>
-                <CardActions>
-                <IconButton color="primary" href="https://github.com/tiffsobczak/all-tied-app" target='_blank' >
-                    <GitHubIcon />
-                </IconButton>
-                <IconButton color="primary" href="https://immense-caverns-04136.herokuapp.com/" target='_blank' >
-                    <PublicIcon />
-                </IconButton>
+            <Project image= "/assets/images/all-tied-app.png"
+                        alt= "all tied app screenshot"
+                        title= "All Tied App"
+                        description= "All Tied App is a friendship finder application for people with busy schedules!"
+                        github="https://github.com/tiffsobczak/all-tied-app"
+                        deployed="https://immense-caverns-04136.herokuapp.com/"/>
+        <Project image= "/assets/images/budgetSS.png"
+                        alt= "budget application"
+                        title= "Budget Tracker"
+                        description= "Track your withdrawls and deposits and have a dynamic visiual to reprensent your transactions. The budget tracker offers offline functionality."
+                        github="https://github.com/tiffsobczak/budget-tracker-w-graph"
+                        deployed="https://evening-escarpment-10377.herokuapp.com/"/>
+                        
+            <Project image= "/assets/images/pokevalue.png"
+                        alt= "pokemon card value app"
+                        title= "PokeValue"
+                        description= "Look up the value of your Pokemon cards! This application was created in collaboration with other teammates using "
+                        github="https://github.com/tiffsobczak/Project-One"
+                        deployed="https://clairedelargy.github.io/Project-One/"/>
 
-                </CardActions>
-            </Card>
-            <Card sx={
-                {maxWidth: 345}
-            }>
-                <CardMedia component="img" height="140" image={process.env.PUBLIC_URL+"/assets/images/budgetSS.png"} alt="budget application"/>
-                <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                        Budget Tracker
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                        Track your withdrawls and deposits and have a dynamic visiual to reprensent your transactions. The budget tracker offers offline functionality.
-                    </Typography>
-                </CardContent>
-                <CardActions>
-                <IconButton color="primary" href="https://github.com/tiffsobczak/all-tied-app" target='_blank' >
-                    <GitHubIcon />
-                </IconButton>
-                <IconButton color="primary" href="https://immense-caverns-04136.herokuapp.com/" target='_blank' >
-                    <PublicIcon />
-                </IconButton>
-                </CardActions>
-            </Card>
-            <Card sx={
-                {maxWidth: 345}
-            }>
-                <CardMedia component="img" height="140" image={process.env.PUBLIC_URL+"/assets/images/pokevalue.png"} alt="pokevalue app"/>
-                <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                        PokeValue
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                        Look up the value of your Pokemon cards! Created as a class project to tackle: 
-                    </Typography>
-                </CardContent>
-                <CardActions>
-                <IconButton color="primary" href="https://github.com/tiffsobczak/all-tied-app" target='_blank' >
-                    <GitHubIcon />
-                </IconButton>
-                <IconButton color="primary" href="https://immense-caverns-04136.herokuapp.com/" target='_blank' >
-                    <PublicIcon />
-                </IconButton>
-                </CardActions>
-            </Card>
-            <Card sx={
-                {maxWidth: 345}
-            }>
-                <CardMedia component="img" height="140" image={process.env.PUBLIC_URL+"/assets/images/run-buddy.png"} alt="budget application"/>
-                <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                        Run Buddy
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                        Application created as a way to learn 
-                    </Typography>
-                </CardContent>
-                <CardActions>
-                <IconButton color="primary" href="https://github.com/tiffsobczak/all-tied-app" target='_blank' >
-                    <GitHubIcon />
-                </IconButton>
-                <IconButton color="primary" href="https://immense-caverns-04136.herokuapp.com/" target='_blank' >
-                    <PublicIcon />
-                </IconButton>
-                </CardActions>
-            </Card><Card sx={
-                {maxWidth: 345}
-            }>
-                <CardMedia component="img" height="140" image={process.env.PUBLIC_URL+"/assets/images/weather-app.png"} alt="weather application screenshot"/>
-                <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                        Weather Dashboard
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                        Weather Dashboard Application created to learn xxxxx
-                    </Typography>
-                </CardContent>
-                <CardActions>
-                <IconButton color="primary" href="https://github.com/tiffsobczak/all-tied-app" target='_blank' >
-                    <GitHubIcon />
-                </IconButton>
-                <IconButton color="primary" href="https://immense-caverns-04136.herokuapp.com/" target='_blank' >
-                    <PublicIcon />
-                </IconButton>
-                </CardActions>
-            </Card>
-            <Card sx={
-                {maxWidth: 345}
-            }>
-                <CardMedia component="img" height="140" image={process.env.PUBLIC_URL+"/assets/images/schedule-screenshot.png"} alt="scheduling application"/>
-                <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                        Daily Schedule Application
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                        Daily schedule application created to gain experience with 
-                    </Typography>
-                </CardContent>
-                <CardActions>
-                <IconButton color="primary" href="https://github.com/tiffsobczak/all-tied-app" target='_blank' >
-                    <GitHubIcon />
-                </IconButton>
-                <IconButton color="primary" href="https://immense-caverns-04136.herokuapp.com/" target='_blank' >
-                    <PublicIcon />
-                </IconButton>
-                </CardActions>
-            </Card>
+
+<Project image= "/assets/images/run-buddy.png"
+                        alt= "run buddy application"
+                        title= "Run Buddy"
+                        description= "Application created using HTML and CSS. "
+                        github="https://github.com/tiffsobczak/run-buddy"
+                        deployed="https://lernantino.github.io/run-buddy/"/>
+
+<Project image= "/assets/images/weather-app.png"
+                        alt= "weather dashboard application "
+                        title= "Weather Dashboard"
+                        description= "Weather Dashboard application built using HTML, CSS, Bootstrap, and JavaScript "
+                        github="https://github.com/tiffsobczak/weather-app"
+                        deployed="https://tiffsobczak.github.io/weather-app/"/>
+
+<Project image= "/assets/images/schedule-screenshot.png"
+                        alt= "daily schedule application"
+                        title= "Daily Schedule Application"
+                        description= "Daily schedule application built with JavaScript, HTML, and CSS. "
+                        github="https://github.com/tiffsobczak/daily-planner"
+                        deployed="https://tiffsobczak.github.io/daily-planner/"/>
+
+        <Project image= "/assets/images/noteSS.png"
+                        alt= "note taking application"
+                        title= "Note Taking Application"
+                        description= "Daily schedule application built with JavaScript, HTML, and CSS. "
+                        github="https://github.com/tiffsobczak/note-taker"
+                        deployed="https://tsob-notetaker.herokuapp.com/notes"/>                
+               
+               <Project image= "/assets/images/code-quiz.png"
+                        alt= "Coding Quiz"
+                        title= "JavaScript Quiz"
+                        description= "JavaScript quiz created using "
+                        github="https://github.com/tiffsobczak/note-taker"
+                        deployed="https://tsob-notetaker.herokuapp.com/notes"/> 
+
+<Project image= "/assets/images/horiseonscreenshot.png"
+                        alt= "Horiseon"
+                        title= "Horiseon"
+                        description= "Company webiste created for HTML and CSS basic understanding."
+                        github="https://github.com/tiffsobczak/note-taker"
+                        deployed="https://tsob-notetaker.herokuapp.com/notes"/> 
+            
+        
+            
         </Masonry>
 
 

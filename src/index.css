@@ -3,7 +3,7 @@ main {
   max-width: 90%;
   padding: 50px 30px;
 }
-:root {
+/* :root {
   --primary: #00a6a6;
   --secondary: #3777ff;
   --tertiary: #b12704;
@@ -14,8 +14,10 @@ main {
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
+} */
+.MuiTab-textColorSecondary {
+  color: white !important;
 }
-
 * {
   box-sizing: border-box;
 }
