@@ -1,14 +1,5 @@
 import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import Masonry from '@mui/lab/Masonry';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import { IconButton } from '@mui/material';
-import PublicIcon from '@mui/icons-material/Public';
 import {Project} from '../Project'
 
 
