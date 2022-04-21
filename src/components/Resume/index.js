@@ -12,7 +12,7 @@ export default function Resume() {
     return (
         <div>
             <Button href={
-                    process.env.PUBLIC_URL + "/assets/resume1021.pdf"
+                    process.env.PUBLIC_URL + "/assets/tsobczak.resume.pdf"
                 }
                 download
                 variant="contained">Download Resume</Button>

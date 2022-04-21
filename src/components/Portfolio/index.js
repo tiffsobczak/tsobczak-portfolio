@@ -8,6 +8,12 @@ function Portfolio() {
     return (
         <Masonry columns={3}
             spacing={2}>
+                <Project image= "/assets/images/eatinerary.png"
+                        alt= "eatinerary screenshot"
+                        title= "Eatinerary"
+                        description="Eatinerary is an application for users to submit information about their visits to restaurants, bars, and eateries. This application was part of a group project and utilizes React, Node, MongoDB, Mongoose, and Express."
+                        github="https://github.com/tiffsobczak/eatinerary"
+                        deployed="https://eatinerary-project.herokuapp.com/"/>
             <Project image= "/assets/images/all-tied-app.png"
                         alt= "all tied app screenshot"
                         title= "All Tied App"
