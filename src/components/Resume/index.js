@@ -12,7 +12,7 @@ export default function Resume() {
     return (
         <div>
             <Button href={
-                    process.env.PUBLIC_URL + "/assets/tsobczak.resume.pdf"
+                    process.env.PUBLIC_URL + "/assets/resume2022.pdf"
                 }
                 download
                 variant="contained">Download Resume</Button>
@@ -44,6 +44,12 @@ export default function Resume() {
                 </ListItem>
                 <ListItem>
                     <ListItemText primary="SQL"secondary={''}/>
+                </ListItem>
+                <ListItem>
+                    <ListItemText primary="C#"secondary={''}/>
+                </ListItem>
+                <ListItem>
+                    <ListItemText primary=".NET"secondary={''}/>
                 </ListItem>
                 
             </List>
