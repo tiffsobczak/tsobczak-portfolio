@@ -15,7 +15,7 @@ function About() {
           Since graduating the bootcamp, I served as an intern for Astral - a start up that creates developer portals as a service. My most recent professional experience is working at H&R Block as a software Engineer. At H&R Block, I worked mostly with C# and .NET frameworks. I created a number of unit tests as well as made significant code changes based on changes the Department of Revenue needed for tax purposes.
         </p>
         <p>
-          In addition to education, health and fitness, crafting, and baking are all passions of mine. I love to create.
+        Outside of web development, I like to make time for working out, baking, and crafting. I also have a family which includes my spouse, daughter, and two dogs.
         </p>
       </div>
     </section>
