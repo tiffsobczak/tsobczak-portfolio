@@ -9,10 +9,14 @@ function About() {
       <div className="my-2">
       <Avatar alt="Tiffany" src={process.env.PUBLIC_URL+"/assets/images/christmas-photo.jpeg"} sx={{ width: 100, height: 100, marginBottom: 2 }} />
         <p>
-          Professional: In April of 2022, I completed a Full-Stack Web Development Bootcamp through Washington University in St. Louis (WashU). The program focused heavily on JavaScript. We created a plethora of projects using Node, Express, SQL, React, HTML, and CSS. There were weekly assignments and three group projects throughout the 24 week course.
+          In October of 2021, I left what I thought was my life long career of being a teacher to pursue a Full-Stack Web Development Bootcamp through Washington University in St. Louis. I was not sure what road I was going down but I knew it would be a good one. The challenge, learning opportunity, and potential to make a difference in a different way were all appealing to me. The bootcamp heavily focused on Javascript and we worked on a plethora of projects using Node, Express, SQL, React, HTML, and CSS.
         </p>
-        <p>Personal: After moving from Wisconsin to Missouri, I left teaching in public schools after five years.
-          Health and fitness is a big passion of mine - as much as finding the best local ice cream shop. My life long dream is to own a dessert bakery - but I have no idea how to bake. I love dogs, high ropes courses, and watching The Office. I love a good challenge whether it be teaching myself to sew or doing 100 burpees.</p>
+        <p>
+          Since graduating the bootcamp, I served as an intern for Astral - a start up that creates developer portals as a service. My most recent professional experience is working at H&R Block as a software Engineer. At H&R Block, I worked mostly with C# and .NET frameworks. I created a number of unit tests as well as made significant code changes based on changes the Department of Revenue needed for tax purposes.
+        </p>
+        <p>
+          In addition to education, health and fitness, crafting, and baking are all passions of mine. I love to create.
+        </p>
       </div>
     </section>
   );
